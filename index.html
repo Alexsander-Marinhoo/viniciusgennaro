@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+
+<head></head>
+
+<body
+    class="font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dr. Vinicius Gennaro | Reabilitação Oral de Alta Performance</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&amp;family=Manrope:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#00174b",
+                        "primary-fixed": "#ffe088",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-variant": "#e4e2e2",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#303031",
+                        "secondary": "#5d5e61",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c6c6c9",
+                        "primary-container": "#d4af37",
+                        "on-secondary-fixed-variant": "#454749",
+                        "surface-container": "#efeded",
+                        "on-background": "#1b1c1c",
+                        "secondary-fixed": "#e2e2e5",
+                        "primary-fixed-dim": "#e9c349",
+                        "outline-variant": "#d0c5af",
+                        "surface-tint": "#735c00",
+                        "on-surface-variant": "#4d4635",
+                        "outline": "#7f7663",
+                        "surface-container-high": "#e9e8e7",
+                        "on-primary-fixed-variant": "#574500",
+                        "primary": "#735c00",
+                        "surface-container-low": "#f5f3f3",
+                        "secondary-container": "#e2e2e5",
+                        "tertiary-container": "#97b0ff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fbf9f9",
+                        "on-primary-fixed": "#241a00",
+                        "on-surface": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fbf9f9",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "surface-container-highest": "#e4e2e2",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#636467",
+                        "on-tertiary-container": "#254188",
+                        "surface": "#fbf9f9",
+                        "on-primary-container": "#554300",
+                        "surface-dim": "#dbdad9",
+                        "tertiary": "#415ba4",
+                        "on-secondary-fixed": "#1a1c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#e9c349"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "section-padding": "120px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Epilogue"],
+                        "display-lg": ["Epilogue"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Epilogue"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["2.5rem", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "display-lg": ["4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+                        "label-caps": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["1.75rem", { "lineHeight": "1.3", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fbf9f9;
+            color: #1b1c1c;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .golden-thread {
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            height: 1px;
+            width: 100%;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(150, 116, 91, 0.2);
+            border-radius: 1.5rem;
+        }
+
+        .glass-card:hover {
+            border-color: #D4AF37;
+        }
+
+        .text-glow-gold {
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+    </style>
+    <!-- Navbar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm transition-all duration-300">
+        <div class="flex justify-between items-center w-full px-gutter py-4 max-w-container-max mx-auto">
+            <a class="flex items-center text-xl font-bold font-headline-md text-headline-md text-primary dark:text-primary z-50"
+                href="#home">
+                <img alt="Dr. Vinicius Gennaro Logo" class="h-16 md:h-20 w-auto object-contain"
+                    src="./public/imgs/logo.png" />
+                Dr. Vinicius Gennaro
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#home">Início</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#servicos">Serviços</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#portfolio">Casos Clínicos</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#sobre">Sobre</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300"
+                    href="#localizacao">Localização</a>
+            </div>
+            <!-- Desktop CTA -->
+            <div class="hidden md:flex">
+                <a class="bg-[#25D366] text-white px-6 py-2 font-label-caps text-label-caps uppercase tracking-widest hover:brightness-110 hover:scale-105 active:scale-95 transition-all duration-300 rounded-full flex items-center gap-2 shadow-lg shadow-[#25D366]/20"
+                    href="https://wa.me/5513997135518" target="_blank">
+                    <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.241 2.242 3.478 5.228 3.479 8.409-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                        </path>
+                    </svg>
+                    Agendar Consulta
+                </a>
+            </div>
+            <!-- Mobile Toggle -->
+            <button
+                class="lg:hidden flex items-center bg-primary-container text-on-primary-container p-2 rounded-lg z-50 transition-colors duration-300 hover:brightness-110"
+                id="menu-toggle">
+                <span class="material-symbols-outlined text-3xl" id="menu-icon">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Container (Inside Navbar) -->
+        <div class="lg:hidden hidden bg-surface border-t border-outline-variant/20 shadow-xl transition-all duration-300 opacity-0 relative z-40"
+            id="mobile-menu">
+            <div class="flex flex-col gap-4 px-gutter py-6 max-h-[calc(100vh-100px)] overflow-y-auto">
+                <a class="mobile-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors"
+                    href="#home">Início</a>
+                <a class="mobile-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors"
+                    href="#servicos">Serviços</a>
+                <a class="mobile-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors"
+                    href="#portfolio">Casos Clínicos</a>
+                <a class="mobile-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors"
+                    href="#sobre">Sobre</a>
+                <a class="mobile-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors"
+                    href="#localizacao">Localização</a>
+
+                <div class="mt-4 pt-6 border-t border-outline-variant/20">
+                    <a class="bg-[#25D366] text-white w-full py-4 font-label-caps text-label-caps uppercase tracking-widest rounded-2xl flex items-center justify-center gap-3 shadow-lg hover:brightness-110 active:scale-95 transition-all duration-300"
+                        href="https://wa.me/5513997135518" target="_blank">
+                        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.241 2.242 3.478 5.228 3.479 8.409-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                            </path>
+                        </svg>
+                        Agendar Avaliação
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-background pt-[104px] pb-20" id="home">
+        <div class="relative z-10 px-gutter max-w-container-max mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-2xl">
+                <span
+                    class="font-label-caps text-label-caps text-primary-fixed mb-4 block tracking-[0.2em] uppercase">Especialista
+                    em Reabilitação Oral</span>
+                <h1
+                    class="font-display-lg text-4xl sm:text-5xl md:text-display-lg text-on-surface mb-6 text-glow-gold leading-tight">
+                    Transforme seu Sorriso com a <span class="text-primary italic">Excelência</span> que Você Merece.
+                </h1>
+                <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                    Especialista em Próteses, Implantes e Restaurações. Tecnologia de ponta e cuidado humanizado para
+                    devolver sua autoestima com resultados naturais e duradouros.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="bg-[#25D366] text-white px-6 py-2 font-label-caps text-label-caps uppercase tracking-widest hover:brightness-110 hover:scale-105 active:scale-95 transition-all duration-300 rounded-full flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20"
+                        href="https://wa.me/5513999999999">
+                        <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.241 2.242 3.478 5.228 3.479 8.409-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                            </path>
+                        </svg>
+                        Agendar Avaliação
+                    </a>
+                    <a class="border border-primary text-primary font-label-caps text-xs md:text-label-caps px-6 md:px-10 py-4 md:py-5 uppercase tracking-widest hover:bg-primary/10 transition-all duration-300 text-center rounded-2xl"
+                        href="#servicos">
+                        Conhecer Serviços
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center h-[500px] lg:h-[650px]">
+                <img class="scale-110 rounded-2xl shadow-2xl shadow-primary/20"
+                    data-alt="Portrait of Dr. Vinicius Gennaro, a male dentist, in a professional medical uniform, smiling confidently in a modern clinical setting."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0uiFXzHKY83Su4HS1WlSsU4UyxY4CJlMoSbaoF5kg2MX8xgfvWAnDh75r1slV6FRrnbFSfRcu6JKfb4N2REk-6nMsXD7e2Meb2VNGSEzCun4wys4M8sH-dI35FEiJiMw_zzN0rFO1_EmFPxi4QAK4kNca9OF4ze328pxY8gWXYrYGkxIG8HSSOQX3cbbb27fvInPA1WabEPT1zqGldK35W-awhWzrwb4KK0qScAjcYeXUBvxGwF6-91_e5XwpBMg6yQwOqmYIRSZMg" />
+            </div>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+            <div class="golden-thread w-24"></div>
+            <a class="material-symbols-outlined text-primary animate-bounce cursor-pointer" href="#">expand_more</a>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-section-padding bg-surface-container-lowest" id="servicos">
+        <div class="px-gutter max-w-container-max mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-surface mb-4">Nossas Especialidades
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Próteses -->
+                <div class="glass-card p-6 md:p-10 group transition-all duration-500">
+                    <span class="material-symbols-outlined text-5xl text-primary mb-6 block"
+                        data-icon="dentistry">dentistry</span>
+                    <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-4">Próteses</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8">
+                        Recupere a funcionalidade e a estética natural do seu sorriso com próteses de alta durabilidade
+                        e encaixe perfeito.
+                    </p>
+                    <div class="h-px bg-outline-variant/30 w-full mb-6 group-hover:bg-primary transition-colors"></div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-label-caps text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Cerâmica
+                            Pura
+                        </li>
+                        <li class="flex items-center gap-2 text-label-caps text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Fluxo
+                            Digital
+                        </li>
+                    </ul>
+                </div>
+                <!-- Implantes -->
+                <div class="glass-card p-6 md:p-10 group transition-all duration-500">
+                    <span class="material-symbols-outlined text-5xl text-primary mb-6 block"
+                        data-icon="medical_services">medical_services</span>
+                    <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-4">Implantes</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8">
+                        A solução definitiva para a perda de dentes, com procedimentos cirúrgicos guiados, seguros e
+                        praticamente indolores.
+                    </p>
+                    <div class="h-px bg-outline-variant/30 w-full mb-6 group-hover:bg-primary transition-colors"></div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-label-caps text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Carga
+                            Imediata
+                        </li>
+                        <li class="flex items-center gap-2 text-label-caps text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Biocompatibilidade
+                        </li>
+                    </ul>
+                </div>
+                <!-- Restaurações -->
+                <div class="glass-card p-6 md:p-10 group transition-all duration-500">
+                    <span class="material-symbols-outlined text-5xl text-primary mb-6 block"
+                        data-icon="biotech">biotech</span>
+                    <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-4">Restaurações</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8">
+                        Excelência estética para reconstruir cada detalhe do seu dente com perfeição técnica e harmonia
+                        visual.
+                    </p>
+                    <div class="h-px bg-outline-variant/30 w-full mb-6 group-hover:bg-primary transition-colors"></div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-label-caps text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Resinas
+                            Premium
+                        </li>
+                        <li class="flex items-center gap-2 text-label-caps text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Facetas de
+                            Porcelana
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="py-section-padding bg-background relative overflow-hidden" id="portfolio">
+        <div class="px-gutter max-w-container-max mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-surface mb-4">Transformações Reais
+                    </h2>
+                    <p class="text-on-surface-variant font-body-lg">
+                        A união entre ciência e arte. Veja os resultados alcançados em nossos casos clínicos de alta
+                        complexidade.
+                    </p>
+                </div>
+                <div class="golden-thread w-full md:w-1/3 mb-4"></div>
+            </div>
+            <!-- Bento Grid Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+                <div class="md:col-span-8 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
+                    <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
+                        data-alt="Close up of a perfect dental restoration result with natural ceramic crowns. The lighting is studio-quality, highlighting the realistic texture and shade matching of the teeth. The overall aesthetic is clean, medical, and luxurious, with a shallow depth of field focusing on the exquisite dental craftsmanship."
+                        src="./public/imgs/equipe.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <span class="font-label-caps text-label-caps text-primary">Equipe</span>
+                    </div>
+                </div>
+                <div class="md:col-span-4 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
+                    <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
+                        data-alt="Macro photography of professional dental tools on a sterile black surface with a single golden accent. The image conveys high precision, luxury, and advanced medical technology. The lighting is focused and moody, emphasizing the clinical excellence of Dr. Vinicius Gennaro's practice."
+                        src="./public/imgs/670122889_18580180150004045_5674155514094528416_n.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <span class="font-label-caps text-label-caps text-primary">Reabilitação Oral Completa</span>
+                    </div>
+                </div>
+                <div class="md:col-span-4 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
+                    <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
+                        data-alt="Detailed view of a modern dental implant procedure model showing precision engineering. The background is a dark, sophisticated medical environment. The image reflects the fusion of health and high-end technology, highlighting the durable and safe solutions provided by the clinic."
+                        src="./public/imgs/622457385_18092402329977938_3762764390454636773_n.webp" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <span class="font-label-caps text-label-caps text-primary">Sorriso de Autoestima</span>
+                    </div>
+                </div>
+                <div class="md:col-span-8 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
+                    <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
+                        data-alt="A portrait of a confident patient smiling brightly in a high-key lighting environment with warm golden undertones. The scene represents the successful outcome of restorative dentistry, radiating health, beauty, and premium care. The visual style is aspirational and elegant, reinforcing the clinic's luxury positioning."
+                        src="./public/imgs/622580034_18190996522355648_6024967502869330773_n.webp" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <span class="font-label-caps text-label-caps text-primary">Estética Avançada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-section-padding bg-surface-container-low" id="sobre">
+        <div class="px-gutter max-w-container-max mx-auto">
+            <div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
+                <div class="relative order-2 md:order-1">
+                    <div
+                        class="absolute -top-10 -left-10 w-40 h-40 border-t-2 border-l-2 border-primary opacity-30 hidden md:block">
+                    </div>
+                    <img class="w-full aspect-[4/5] object-cover transition-all duration-1000 rounded-2xl"
+                        data-alt="Professional portrait of Dr. Vinicius Gennaro wearing a white lab coat, standing in front of classical paintings in a refined clinical environment."
+                        src="./public/imgs/626297645_18431976823119049_3131870257906023077_n (1).jpg" />
+                    <div class="absolute -bottom-6 -right-6 bg-primary-container p-6 md:p-8 rounded-2xl shadow-xl">
+                        <span class="font-headline-md text-headline-md text-on-primary-container">5+ Anos</span>
+                        <p class="font-label-caps text-label-caps text-on-primary-container opacity-80">De Experiência
+                        </p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-surface mb-8">Dr. Vinicius Gennaro
+                    </h2>
+                    <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                        Cirurgião Dentista dedicado à arte de restaurar sorrisos e devolver a qualidade de vida. Com
+                        anos de experiência e constante atualização em centros de excelência, o Dr. Vinicius foca em
+                        resultados que unem saúde, funcionalidade e harmonia estética.
+                    </p>
+                    <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant mb-10 leading-relaxed">um
+                        ambiente
+                        privativo, tecnologia digital de ponta e um planejamento personalizado para que cada paciente
+                        sinta-se único em sua jornada de transformação.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mb-10">
+                        <div>
+                            <span class="font-headline-md text-xl md:text-headline-md text-primary block">Pós
+                                Graduado</span>
+                            <span class="text-label-caps text-on-surface-variant opacity-70">Em Implantodontia -
+                                UMS</span>
+                        </div>
+                        <div>
+                            <span class="font-headline-md text-headline-md text-primary block"><br /></span>
+                            <span class="text-label-caps text-on-surface-variant opacity-70"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location Section -->
+    <section class="py-section-padding bg-background relative" id="localizacao">
+        <div class="px-gutter max-w-container-max mx-auto">
+            <div class="text-center mb-16">
+                <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block">ONDE
+                    ESTAMOS</span>
+                <h2 class="font-headline-lg text-3xl md:text-headline-lg text-on-surface">Agende sua Visita</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="glass-card p-8 md:p-12 flex flex-col justify-center">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                        data-icon="location_on">location_on</span>
+                    <h3 class="font-headline-md text-2xl md:text-headline-md text-on-surface mb-4">Vila Tupi, Praia
+                        Grande</h3>
+                    <p class="text-base md:text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Rua Nancyr Feliciano de Oliveira, 543<br />
+                        Praia Grande - SP
+                    </p>
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-start gap-4 text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary mt-1">schedule</span>
+                            <div class="flex flex-col gap-1 text-sm md:text-base">
+                                <span class="">Seg - Sex: 9h às 12h / 14h às 19h</span>
+                                <span class="">Sábado: 9h às 12h / 13h às 16h</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary">phone_iphone</span>
+                            <span class="">(13) 99713-5518</span>
+                        </div>
+                    </div>
+                    <a class="flex items-center justify-center gap-3 bg-white/5 border border-primary text-primary px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300 rounded-2xl"
+                        href="https://maps.app.goo.gl/GaW23z451k6H61gz6" target="_blank">
+                        VER NO MAPA <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+                <div class="h-[400px] md:h-auto bg-surface-container-high relative rounded-2xl overflow-hidden">
+                    <iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.6112952875154!2d-46.38692812373007!3d-23.991823078499245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1dc59c47c7c3%3A0xc395b058a9d18e80!2sR.%20Nancyr%20Feliciano%20de%20Oliveira%2C%20543%20-%20Vila%20Tupi%2C%20Praia%20Grande%20-%20SP%2C%2011703-040!5e0!3m2!1spt-BR!2sbr!4v1715800000000!5m2!1spt-BR!2sbr"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant/10 py-section-padding">
+        <div
+            class="flex flex-col md:flex-row justify-between items-start w-full px-gutter max-w-container-max mx-auto gap-12">
+            <div class="max-w-sm">
+                <span class="font-headline-md text-2xl md:text-headline-md text-primary mb-6 block">Dr. Vinicius
+                    Gennaro</span>
+                <p class="text-base md:text-body-lg text-on-surface-variant leading-relaxed mb-8">
+                    Elevando os padrões da odontologia estética com precisão cirúrgica e um olhar artístico sobre cada
+                    sorriso.
+                </p>
+                <div class="flex gap-6">
+                    <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+                        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+                        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.241 2.242 3.478 5.228 3.479 8.409-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6">
+                <span
+                    class="font-label-caps text-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest">Navegação</span>
+                <nav class="flex flex-col gap-3">
+                    <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+                        href="#home">Início</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+                        href="#servicos">Serviços</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+                        href="#portfolio">Casos Clínicos</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+                        href="#sobre">Sobre Dr. Vinicius</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+                        href="#localizacao">Localização</a>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-6">
+                <span
+                    class="font-label-caps text-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest">Contato
+                    Imediato</span>
+                <div class="flex flex-col gap-4">
+                    <a class="group flex items-center gap-4 p-6 rounded-2xl transition-all duration-300 bg-[#25D366] hover:brightness-110 shadow-lg shadow-[#25D366]/20"
+                        href="https://wa.me/5513997135518" target="_blank">
+                        <div
+                            class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white transition-all">
+                            <svg class="w-7 h-7 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.241 2.242 3.478 5.228 3.479 8.409-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block font-label-caps text-label-caps text-white/80">WhatsApp</span>
+                            <span class="text-white font-bold">(13) 99713-5518</span>
+                        </div>
+                    </a>
+                    <a class="group flex items-center gap-4 glass-card p-6 border-outline-variant/30 rounded-2xl hover:border-primary transition-all duration-300"
+                        href="https://www.instagram.com/viniciusgennaro" target="_blank">
+                        <div
+                            class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block font-label-caps text-label-caps text-primary">Instagram</span>
+                            <span class="text-on-surface font-bold">@viniciusgennaro</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-container-max mx-auto px-gutter mt-20 pt-10 border-t border-outline-variant/10">
+            <p class="text-label-caps text-on-surface-variant/50 text-center md:text-left">© 2024 Dr. Vinicius Gennaro.
+                Excelência em Periodontia e Odontologia Estética. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- FAB for Mobile (Conditional visibility handled by screen size) -->
+    <a class="md:hidden fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl shadow-[#25D366]/40 flex items-center justify-center z-50 hover:scale-110 active:scale-95 transition-all animate-bounce"
+        href="https://wa.me/5513999999999">
+        <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.241 2.242 3.478 5.228 3.479 8.409-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+            </path>
+        </svg>
+    </a>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                // Force reflow
+                void mobileMenu.offsetWidth;
+                mobileMenu.classList.remove('opacity-0');
+                mobileMenu.classList.add('opacity-100');
+                menuIcon.textContent = 'close';
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.remove('opacity-100');
+                mobileMenu.classList.add('opacity-0');
+                menuIcon.textContent = 'menu';
+                document.body.style.overflow = '';
+
+                // Wait for transition
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('opacity-100');
+                mobileMenu.classList.add('opacity-0');
+                menuIcon.textContent = 'menu';
+                document.body.style.overflow = '';
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>
