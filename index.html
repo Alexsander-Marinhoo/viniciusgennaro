@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR" style="scroll-behavior: smooth;">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
@@ -99,10 +99,6 @@
         }
     </script>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             background-color: #fbf9f9;
             color: #1b1c1c;
@@ -345,7 +341,7 @@
                 <div class="md:col-span-8 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
                     <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
                         data-alt="Close up of a perfect dental restoration result with natural ceramic crowns. The lighting is studio-quality, highlighting the realistic texture and shade matching of the teeth. The overall aesthetic is clean, medical, and luxurious, with a shallow depth of field focusing on the exquisite dental craftsmanship."
-                        src="./imgs/equipe.jpg" />
+                        src="./imgs/equipe.jpg" loading="lazy" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                         <span class="font-label-caps text-label-caps text-primary">Equipe</span>
@@ -354,7 +350,7 @@
                 <div class="md:col-span-4 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
                     <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
                         data-alt="Macro photography of professional dental tools on a sterile black surface with a single golden accent. The image conveys high precision, luxury, and advanced medical technology. The lighting is focused and moody, emphasizing the clinical excellence of Dr. Vinicius Gennaro's practice."
-                        src="./imgs/670122889_18580180150004045_5674155514094528416_n.jpg" />
+                        src="./imgs/670122889_18580180150004045_5674155514094528416_n.jpg" loading="lazy" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                         <span class="font-label-caps text-label-caps text-primary">Reabilitação Oral Completa</span>
@@ -363,7 +359,7 @@
                 <div class="md:col-span-4 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
                     <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
                         data-alt="Detailed view of a modern dental implant procedure model showing precision engineering. The background is a dark, sophisticated medical environment. The image reflects the fusion of health and high-end technology, highlighting the durable and safe solutions provided by the clinic."
-                        src="./imgs/622457385_18092402329977938_3762764390454636773_n.webp" />
+                        src="./imgs/622457385_18092402329977938_3762764390454636773_n.webp" loading="lazy" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                         <span class="font-label-caps text-label-caps text-primary">Sorriso de Autoestima</span>
@@ -372,7 +368,7 @@
                 <div class="md:col-span-8 relative overflow-hidden group rounded-2xl aspect-video md:aspect-auto">
                     <img class="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110"
                         data-alt="A portrait of a confident patient smiling brightly in a high-key lighting environment with warm golden undertones. The scene represents the successful outcome of restorative dentistry, radiating health, beauty, and premium care. The visual style is aspirational and elegant, reinforcing the clinic's luxury positioning."
-                        src="./imgs/622580034_18190996522355648_6024967502869330773_n.webp" />
+                        src="./imgs/622580034_18190996522355648_6024967502869330773_n.webp" loading="lazy" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                         <span class="font-label-caps text-label-caps text-primary">Estética Avançada</span>
@@ -391,7 +387,7 @@
                     </div>
                     <img class="w-full aspect-[4/5] object-cover transition-all duration-1000 rounded-2xl"
                         data-alt="Professional portrait of Dr. Vinicius Gennaro wearing a white lab coat, standing in front of classical paintings in a refined clinical environment."
-                        src="./imgs/626297645_18431976823119049_3131870257906023077_n (1).jpg" />
+                        src="./imgs/626297645_18431976823119049_3131870257906023077_n (1).jpg" loading="lazy" />
                     <div class="absolute -bottom-6 -right-6 bg-primary-container p-6 md:p-8 rounded-2xl shadow-xl">
                         <span class="font-headline-md text-headline-md text-on-primary-container">5+ Anos</span>
                         <p class="font-label-caps text-label-caps text-on-primary-container opacity-80">De Experiência
@@ -610,6 +606,33 @@
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+            });
+        });
+    </script>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Rolagem suave para todos os links internos via Lenis
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.getAttribute('href');
+                if (target && target !== '#') {
+                    // Obtém a altura do navbar se for fixa
+                    const navbarHeight = document.querySelector('nav').offsetHeight || 0;
+                    lenis.scrollTo(target, {
+                        offset: -navbarHeight
+                    });
+                }
             });
         });
     </script>
